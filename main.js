@@ -12,12 +12,26 @@ item13.style.color = 'rgba(0,0,0,0.5)';
 const item3 = document.querySelector('#item-3');
 item3.innerText = 'I say, "Hi!"';
 
-const newImg = document.querySelector('img');
-newImg.src = 'http://www.tioxic.com/wp-content/uploads/trex_4.jpg';
-newImg.style.height = '300px';
+const oldImg = document.querySelector('img');
+oldImg.src = 'http://www.tioxic.com/wp-content/uploads/trex_4.jpg';
+oldImg.style.height = '300px';
+
+const newDiv = document.createElement('div');
+newDiv.style.position = 'relative';
+
+const newImg = document.createElement('img');
+newImg.src = 'https://media0.giphy.com/media/6Nv7BdrUl6Psc/giphy.gif';
+
+const mainDiv = document.querySelector('div');
+mainDiv.appendChild(newDiv);
+
+newDiv.appendChild(newImg)
 
 const item16 = document.createElement('li');
-item16.className = 'item';
-document.querySelector(ul).appendChild('item16');
+item16.class = 'item';
+item16.id = 'item-16';
+item16.innerText = "I won't be fooled again."
+list = document.querySelector('ul');
+list.appendChild(item16);
 
 
